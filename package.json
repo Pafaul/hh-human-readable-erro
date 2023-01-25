@@ -1,0 +1,52 @@
+{
+  "name": "human-readable-error",
+  "version": "1.0.0",
+  "description": "human-readable-error repo",
+  "main": "index.js",
+  "scripts": {
+    "compile": "npx hardhat compile",
+    "coverage": "npx hardhat coverage",
+    "gas-report": "REPORT_GAS=true npx hardhat test",
+    "test": "npx hardhat test",
+    "prettify": "npx prettier --write \"contracts/**/*.sol\""
+  },
+  "keywords": [
+    "Template",
+    "Solidity"
+  ],
+  "author": "Pavel Mikhailov",
+  "license": "MIT",
+  "dependencies": {
+    "@openzeppelin/contracts": "4.7.3",
+    "@openzeppelin/test-helpers": "^0.5.16",
+    "bn-chai": "^1.0.1",
+    "bn.js": "^5.2.1",
+    "dotenv": "^16.0.2",
+    "glob": "8.0.3",
+    "prettier-plugin-solidity": "^1.0.0",
+    "web3-utils": "^1.7.5"
+  },
+  "files": [
+    "contracts/*.sol"
+  ],
+  "devDependencies": {
+    "@ethersproject/abi": "^5.7.0",
+    "@nomicfoundation/hardhat-chai-matchers": "^1.0.3",
+    "@nomicfoundation/hardhat-network-helpers": "^1.0.4",
+    "@nomicfoundation/hardhat-toolbox": "^1.0.2",
+    "@nomiclabs/hardhat-ethers": "npm:hardhat-deploy-ethers",
+    "@nomiclabs/hardhat-etherscan": "^3.1.0",
+    "@typechain/ethers-v5": "^10.1.0",
+    "@typechain/hardhat": "^6.1.2",
+    "chai": "^4.3.6",
+    "ethers": "^5.7.0",
+    "hardhat": "^2.10.2",
+    "hardhat-abi-exporter": "^2.10.0",
+    "hardhat-deploy": "^0.11.12",
+    "hardhat-gas-reporter": "^1.0.8",
+    "solidity-coverage": "^0.7.21",
+    "ts-node": "^10.9.1",
+    "typechain": "^8.1.1",
+    "typescript": "^4.9.3"
+  }
+}
